@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -50,6 +51,7 @@ namespace ShoppingCartArchitecture.Data.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Query<STP_GetUsers>();
+            modelBuilder.Query<STP_GetUserDetails>();
 
             modelBuilder.Entity<AspnetApplications>(entity =>
             {
@@ -623,11 +625,24 @@ namespace ShoppingCartArchitecture.Data.Models
         {
             // Initialization.  
             List<STP_GetUsers> lst = new List<STP_GetUsers>();
+            string sqlQuery = "EXEC [dbo].[STP_GetUsers]";
 
-                string sqlQuery = "EXEC [dbo].[STP_GetUsers]";
-
-                lst = this.Query<STP_GetUsers>().FromSql(sqlQuery).ToList();
+            lst = this.Query<STP_GetUsers>().FromSql(sqlQuery).ToList();
             return lst;
+        }
+
+        public STP_GetUserDetails GetUserDetails(int Id)
+        {
+            // Initialization.  
+            STP_GetUserDetails detail = new STP_GetUserDetails();
+
+            // Settings.  
+            SqlParameter userId = new SqlParameter("@userId", Id);
+
+            string sqlQuery = "EXEC [dbo].[STP_GetUserDetails]" + "@userId";
+
+            detail = this.Query<STP_GetUserDetails>().FromSql(sqlQuery, userId).FirstOrDefault();
+            return detail;
         }
     }
 }
