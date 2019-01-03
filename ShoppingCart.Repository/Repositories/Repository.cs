@@ -39,6 +39,10 @@ namespace ShoppingCart.Repository.Repositories
             return Context.Set<T>().Find(id);
         }
 
+        public object GetSP()
+        {
+            return Context.GetUsers();
+        }
         public void Update(T entity)
         {
             Context.Entry(entity).State = EntityState.Modified;

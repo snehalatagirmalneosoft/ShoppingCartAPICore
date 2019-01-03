@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using ShoppingCart.Data.Models;
 
 namespace ShoppingCartArchitecture.Data.Models
 {
@@ -45,6 +49,8 @@ namespace ShoppingCartArchitecture.Data.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Query<STP_GetUsers>();
+
             modelBuilder.Entity<AspnetApplications>(entity =>
             {
                 entity.HasKey(e => e.ApplicationId)
@@ -611,6 +617,17 @@ namespace ShoppingCartArchitecture.Data.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
             });
+        }
+
+        public List<STP_GetUsers> GetUsers()
+        {
+            // Initialization.  
+            List<STP_GetUsers> lst = new List<STP_GetUsers>();
+
+                string sqlQuery = "EXEC [dbo].[STP_GetUsers]";
+
+                lst = this.Query<STP_GetUsers>().FromSql(sqlQuery).ToList();
+            return lst;
         }
     }
 }

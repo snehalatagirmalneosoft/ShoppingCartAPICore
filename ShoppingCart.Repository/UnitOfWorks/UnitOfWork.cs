@@ -1,4 +1,5 @@
-﻿using ShoppingCart.Repository.Interfaces;
+﻿using ShoppingCart.Data.Models;
+using ShoppingCart.Repository.Interfaces;
 using ShoppingCart.Repository.Repositories;
 using ShoppingCartArchitecture.Data.Models;
 using System;
@@ -16,6 +17,8 @@ namespace ShoppingCart.Repository.UnitOfWorks
         }
         IRepository<UserRole> IUnitOfWork.userRoleRepository => 
             new Repository<UserRole>(Context);
+
+        public IRepository<STP_GetUsers> userRepository => new Repository<STP_GetUsers>(Context);
 
         public void Dispose()
         {
