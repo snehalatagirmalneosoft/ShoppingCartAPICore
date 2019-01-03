@@ -7,6 +7,7 @@ namespace ShoppingCart.BAL.Interfaces
    public interface IUserService
     {
        // void SaveUserRole(UserRoleDTO model);
-       object GetAllUser();
+        object GetAllUser();
+        object GetUserById(int Id);
     }
 }

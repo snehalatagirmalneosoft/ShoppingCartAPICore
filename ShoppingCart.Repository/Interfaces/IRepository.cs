@@ -13,6 +13,7 @@ namespace ShoppingCart.Repository.Interfaces
         void Delete(int id);
         void Update(T entity);
 
-        object GetSP();
+        object GetUserList();
+        object GetUserDetail(int Id);
     }
 }

@@ -15,10 +15,9 @@ namespace ShoppingCart.Repository.UnitOfWorks
         {
             Context.SaveChanges();
         }
-        IRepository<UserRole> IUnitOfWork.userRoleRepository => 
-            new Repository<UserRole>(Context);
+        IRepository<UserRole> IUnitOfWork.userRoleRepository => new Repository<UserRole>(Context);
 
-        public IRepository<STP_GetUsers> userRepository => new Repository<STP_GetUsers>(Context);
+        IRepository<STP_GetUsers> IUnitOfWork.userRepository => new Repository<STP_GetUsers>(Context);
 
         public void Dispose()
         {

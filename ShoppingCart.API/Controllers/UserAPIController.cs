@@ -17,10 +17,17 @@ namespace ShoppingCart.API.Controllers
         {
             _userService = userService;
         }
-        [HttpGet]
-        public object Get()
+
+        [HttpGet("GetUserList")]
+        public object GetUserList()
         {
             return _userService.GetAllUser();
+        }
+
+        [HttpGet("GetUserById")]
+        public object GetUserById(int Id)
+        {
+            return _userService.GetUserById(Id);
         }
     }
 }

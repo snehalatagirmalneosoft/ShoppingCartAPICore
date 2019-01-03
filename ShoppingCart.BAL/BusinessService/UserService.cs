@@ -18,10 +18,15 @@ namespace ShoppingCart.BAL.BusinessService
 
         public object GetAllUser()
         {
-            var list = _unitOfWork.userRepository.GetSP();
+            var list = _unitOfWork.userRepository.GetUserList();
             return list;
         }
 
-       
+        public object GetUserById(int Id)
+        {
+            var list = _unitOfWork.userRepository.GetUserDetail(Id);
+            return list;
+        }
+
     }
 }
