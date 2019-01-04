@@ -41,6 +41,9 @@ namespace ShoppingCart.API
             services.AddMvc();
             services.AddScoped<IUserRoleService, UserRoleService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ISubCategoryService, SubCategoryService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IMapperFactory, MapperFactory>();
 

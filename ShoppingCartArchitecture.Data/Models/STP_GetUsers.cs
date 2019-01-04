@@ -15,9 +15,8 @@ namespace ShoppingCart.Data.Models
         public string LastName { get; set; }
         public string RoleName { get; set; }
         public string CreatedBy { get; set; }
-        //public DateTime? ModifiedOn { get; set; }
-        
-       // public int? ModifiedBy { get; set; }
-       // public bool? IsActive { get; set; }
+        //public DateTime? ModifiedOn { get; set; }       
+        //public int? ModifiedBy { get; set; }
+        public bool? IsActive { get; set; }
     }
 }

@@ -19,6 +19,12 @@ namespace ShoppingCart.Repository.UnitOfWorks
 
         IRepository<STP_GetUsers> IUnitOfWork.userRepository => new Repository<STP_GetUsers>(Context);
 
+        IRepository<SubCategory> IUnitOfWork.subCategoryRepository => new Repository<SubCategory>(Context);
+
+        IRepository<Category> IUnitOfWork.categoryRepository => new Repository<Category>(Context);
+
+        IRepository<Product> IUnitOfWork.productRepository => new Repository<Product>(Context);
+
         public void Dispose()
         {
             Context.Dispose();

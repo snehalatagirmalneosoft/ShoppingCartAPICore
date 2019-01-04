@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
@@ -52,6 +53,10 @@ namespace ShoppingCartArchitecture.Data.Models
         {
             modelBuilder.Query<STP_GetUsers>();
             modelBuilder.Query<STP_GetUserDetails>();
+            modelBuilder.Query<STP_GetAllSubCategories>();
+            modelBuilder.Query<STP_GetSubCategoryDetails>();
+            modelBuilder.Query<STP_ShowAllProductList>();
+            modelBuilder.Query<STP_ProductDetails>();
 
             modelBuilder.Entity<AspnetApplications>(entity =>
             {
@@ -621,6 +626,8 @@ namespace ShoppingCartArchitecture.Data.Models
             });
         }
 
+        #region User Module
+
         public List<STP_GetUsers> GetUsers()
         {
             // Initialization.  
@@ -644,5 +651,133 @@ namespace ShoppingCartArchitecture.Data.Models
             detail = this.Query<STP_GetUserDetails>().FromSql(sqlQuery, userId).FirstOrDefault();
             return detail;
         }
+        #endregion
+
+        #region Sub Category Module
+
+        public List<STP_GetAllSubCategories> GetSubCategoryList()
+        {
+            // Initialization.  
+            List<STP_GetAllSubCategories> lst = new List<STP_GetAllSubCategories>();
+            string sqlQuery = "EXEC [dbo].[STP_GetAllSubCategories]";
+
+            lst = this.Query<STP_GetAllSubCategories>().FromSql(sqlQuery).ToList();
+            return lst;
+        }
+
+        public STP_GetSubCategoryDetails GetSubCategoryDetail(int SubCategoryId)
+        {
+            // Initialization.  
+            STP_GetSubCategoryDetails detail = new STP_GetSubCategoryDetails();
+
+            // Settings.  
+            SqlParameter subCategoryId = new SqlParameter("@subCategoryId", SubCategoryId);
+
+            string sqlQuery = "EXEC [dbo].[STP_GetSubCategoryDetails]" + "@subCategoryId";
+
+            detail = this.Query<STP_GetSubCategoryDetails>().FromSql(sqlQuery, subCategoryId).FirstOrDefault();
+            return detail;
+        }
+        #endregion
+
+        #region Product Module
+
+        public List<STP_ShowAllProductList> GetProductList()
+        {
+            // Initialization.  
+            List<STP_ShowAllProductList> lst = new List<STP_ShowAllProductList>();
+            string sqlQuery = "EXEC [dbo].[STP_ShowAllProductList]";
+
+            lst = this.Query<STP_ShowAllProductList>().FromSql(sqlQuery).ToList();
+            return lst;
+        }
+
+        public STP_ProductDetails GetProductDetail(int ProductId)
+        {
+            // Initialization.  
+            STP_ProductDetails detail = new STP_ProductDetails();
+
+            // Settings.  
+            SqlParameter productId = new SqlParameter("@productId", ProductId);
+
+            string sqlQuery = "EXEC [dbo].[STP_ProductDetails]" + "@productId";
+
+            detail = this.Query<STP_ProductDetails>().FromSql(sqlQuery, productId).FirstOrDefault();
+            return detail;
+        }
+
+        public int AddProduct(Product model, DataTable tempProductImages)
+        {
+            using (ShoppingCartOldDBContext context = new ShoppingCartOldDBContext())
+            {
+                // Settings.
+                SqlParameter SubCategoryId = new SqlParameter("@SubCategoryId", model.SubCategoryId);
+                SqlParameter ProductName = new SqlParameter("@ProductName", model.ProductName);
+                SqlParameter CreatedOn = new SqlParameter("@CreatedOn", model.CreatedOn);
+                SqlParameter CreatedBy = new SqlParameter("@CreatedBy", model.CreatedBy);
+                SqlParameter Price = new SqlParameter("@Price", model.Price);
+                SqlParameter ProductDescription = new SqlParameter("@ProductDescription", model.ProductDescription);
+                SqlParameter IsActive = new SqlParameter("@IsActive", model.IsActive);
+                SqlParameter Quantity = new SqlParameter("@Quantity", model.Quantity);
+
+                var TempProductImages = new SqlParameter("@TempProductImages", SqlDbType.Structured);
+                TempProductImages.Value = tempProductImages;
+                TempProductImages.TypeName = "dbo.ImageTable";
+
+                int result = context.Database.ExecuteSqlCommand("STP_AddNewProduct @SubCategoryId, @ProductName, @CreatedOn, @CreatedBy, @Price, @ProductDescription, @IsActive, @Quantity, @TempProductImages ",
+                         SubCategoryId, ProductName, CreatedOn, CreatedBy, Price, ProductDescription, IsActive, Quantity, TempProductImages);
+
+                return result;
+            }             
+        }
+
+        public int UpdateProduct(Product model, DataTable tempProductImages)
+        {
+            using (ShoppingCartOldDBContext context = new ShoppingCartOldDBContext())
+            {
+                // Settings.
+                SqlParameter ProductId = new SqlParameter("@ProductId", model.ProductId);
+                SqlParameter SubCategoryId = new SqlParameter("@SubCategoryId", model.SubCategoryId);
+                SqlParameter ProductName = new SqlParameter("@ProductName", model.ProductName);
+                SqlParameter ModifiedOn = new SqlParameter("@ModifiedOn", model.ModifiedOn);
+                SqlParameter ModifiedBy = new SqlParameter("@ModifiedBy", model.ModifiedBy);
+                SqlParameter Price = new SqlParameter("@Price", model.Price);
+                SqlParameter ProductDescription = new SqlParameter("@ProductDescription", model.ProductDescription);
+                SqlParameter IsActive = new SqlParameter("@IsActive", model.IsActive);
+                SqlParameter Quantity = new SqlParameter("@Quantity", model.Quantity);
+
+                var TempProductImages = new SqlParameter("@TempProductImages", SqlDbType.Structured);
+                TempProductImages.Value = tempProductImages;
+                TempProductImages.TypeName = "dbo.ImageTable";
+
+                int result = context.Database.ExecuteSqlCommand("STP_UpdateProduct @ProductId, @SubCategoryId, @ProductName, @ModifiedOn, @ModifiedBy, @Price, @ProductDescription, @IsActive, @Quantity, @TempProductImages ",
+                         ProductId, SubCategoryId, ProductName, ModifiedOn, ModifiedBy, Price, ProductDescription, IsActive, Quantity, TempProductImages);
+
+                return result;
+            }
+        }
+
+        public int DeleteProduct(int ProductId)
+        {
+            using (ShoppingCartOldDBContext context = new ShoppingCartOldDBContext())
+            {
+                // Settings.
+                SqlParameter Id = new SqlParameter("@ProductId", ProductId);
+
+                var ProductToDelete = context.Product.FirstOrDefault(em => em.ProductId == ProductId);
+                if (ProductToDelete != null)
+                {
+                    //ExecuteSqlCommand returns int value i.e no of rows affected
+                    int flag = context.Database.ExecuteSqlCommand("STP_DeleteProduct @ProductId", Id);
+                    return flag;
+                }
+                else
+                {
+                    //if not available to be deleted
+                    return (-1);
+                }
+            }
+        }
+        #endregion
     }
 }

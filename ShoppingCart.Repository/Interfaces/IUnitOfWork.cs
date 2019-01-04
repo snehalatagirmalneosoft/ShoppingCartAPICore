@@ -11,6 +11,12 @@ namespace ShoppingCart.Repository.Interfaces
         IRepository<UserRole> userRoleRepository { get; }
 
         IRepository<STP_GetUsers> userRepository { get; }
+
+        IRepository<SubCategory> subCategoryRepository { get; }
+
+        IRepository<Category> categoryRepository { get; }
+
+        IRepository<Product> productRepository { get; }
         void Commit();
     }
 }
