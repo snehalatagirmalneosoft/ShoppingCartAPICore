@@ -1,0 +1,14 @@
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\obj\Debug\netcoreapp2.0\ShoppingCart.DAL.csprojAssemblyReference.cache
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\obj\Debug\netcoreapp2.0\ShoppingCart.DAL.csproj.CoreCompileInputs.cache
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\obj\Debug\netcoreapp2.0\ShoppingCart.DAL.AssemblyInfoInputs.cache
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\obj\Debug\netcoreapp2.0\ShoppingCart.DAL.AssemblyInfo.cs
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\bin\Debug\netcoreapp2.0\ShoppingCart.DAL.deps.json
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\bin\Debug\netcoreapp2.0\ShoppingCart.DAL.dll
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\bin\Debug\netcoreapp2.0\ShoppingCart.DAL.pdb
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\bin\Debug\netcoreapp2.0\ShoppingCart.Data.dll
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\bin\Debug\netcoreapp2.0\ShoppingCart.DTO.dll
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\bin\Debug\netcoreapp2.0\ShoppingCart.DTO.pdb
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\bin\Debug\netcoreapp2.0\ShoppingCart.Data.pdb
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\obj\Debug\netcoreapp2.0\ShoppingCart.DAL.csproj.CopyComplete
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\obj\Debug\netcoreapp2.0\ShoppingCart.DAL.dll
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.Repository\obj\Debug\netcoreapp2.0\ShoppingCart.DAL.pdb

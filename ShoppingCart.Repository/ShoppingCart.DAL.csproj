@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ShoppingCart.DTO\ShoppingCart.DTO.csproj" />
     <ProjectReference Include="..\ShoppingCartArchitecture.Data\ShoppingCart.Data.csproj" />
   </ItemGroup>
 

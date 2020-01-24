@@ -12,4 +12,10 @@
     <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ShoppingCart.API\ShoppingCart.API.csproj" />
+    <ProjectReference Include="..\ShoppingCart.BAL\ShoppingCart.BAL.csproj" />
+    <ProjectReference Include="..\ShoppingCart.DTO\ShoppingCart.DTO.csproj" />
+  </ItemGroup>
+
 </Project>

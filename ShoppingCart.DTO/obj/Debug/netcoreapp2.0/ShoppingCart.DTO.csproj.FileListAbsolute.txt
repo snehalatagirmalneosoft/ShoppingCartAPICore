@@ -1,0 +1,12 @@
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\obj\Debug\netcoreapp2.0\ShoppingCart.DTO.csprojAssemblyReference.cache
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\obj\Debug\netcoreapp2.0\ShoppingCart.DTO.csproj.CoreCompileInputs.cache
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\obj\Debug\netcoreapp2.0\ShoppingCart.DTO.AssemblyInfoInputs.cache
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\obj\Debug\netcoreapp2.0\ShoppingCart.DTO.AssemblyInfo.cs
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\bin\Debug\netcoreapp2.0\ShoppingCart.DTO.deps.json
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\bin\Debug\netcoreapp2.0\ShoppingCart.DTO.dll
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\bin\Debug\netcoreapp2.0\ShoppingCart.DTO.pdb
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\bin\Debug\netcoreapp2.0\ShoppingCart.Data.dll
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\bin\Debug\netcoreapp2.0\ShoppingCart.Data.pdb
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\obj\Debug\netcoreapp2.0\ShoppingCart.DTO.csproj.CopyComplete
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\obj\Debug\netcoreapp2.0\ShoppingCart.DTO.dll
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\ShoppingCart.DTO\obj\Debug\netcoreapp2.0\ShoppingCart.DTO.pdb
