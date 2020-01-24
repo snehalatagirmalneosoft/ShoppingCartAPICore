@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ShoppingCart.BAL\ShoppingCart.BAL.csproj" />
     <ProjectReference Include="..\ShoppingCart.DTO\ShoppingCart.DTO.csproj" />
+    <ProjectReference Include="..\ShoppingCart.Repository\ShoppingCart.DAL.csproj" />
   </ItemGroup>
 
 </Project>
