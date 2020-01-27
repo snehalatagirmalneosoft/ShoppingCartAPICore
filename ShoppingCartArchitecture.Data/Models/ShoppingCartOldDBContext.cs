@@ -45,7 +45,7 @@ namespace ShoppingCartArchitecture.Data.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Data Source=10.0.28.221,14789;Initial Catalog=ShoppingCartOldDB;User ID=sa;Password=pass123!@#");
+                optionsBuilder.UseSqlServer(@"Data Source=PUNELAPTOP-193;Initial Catalog=ShoppingCartOldDB;User ID=sa;Password=pass123!@#");
             }
         }
 
