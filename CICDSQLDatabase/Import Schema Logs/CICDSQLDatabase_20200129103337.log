@@ -1,0 +1,82 @@
+29-01-2020 16:03:37	This log contains information about the import schema operation into project 'CICDSQLDatabase' on computer 'PUNELAPTOP-193' by user 'Neosoft'.
+29-01-2020 16:03:37	Import of database schema has started.
+29-01-2020 16:03:43	Gathering database credentials
+29-01-2020 16:03:43	Gathering database options
+29-01-2020 16:03:43	Gathering users
+29-01-2020 16:03:43	Gathering roles
+29-01-2020 16:03:43	Gathering application roles
+29-01-2020 16:03:43	Gathering role memberships
+29-01-2020 16:03:43	Gathering filegroups
+29-01-2020 16:03:43	Gathering full-text catalogs
+29-01-2020 16:03:43	Gathering assemblies
+29-01-2020 16:03:43	Gathering certificates
+29-01-2020 16:03:44	Gathering asymmetric keys
+29-01-2020 16:03:44	Gathering symmetric keys
+29-01-2020 16:03:44	Gathering encrypted symmetric keys
+29-01-2020 16:03:44	Gathering schemas
+29-01-2020 16:03:44	Gathering XML schema collections
+29-01-2020 16:03:44	Gathering user-defined data types
+29-01-2020 16:03:44	Gathering user-defined types
+29-01-2020 16:03:44	Gathering table types
+29-01-2020 16:03:44	Gathering unique keys for table types
+29-01-2020 16:03:44	Gathering primary keys for table types
+29-01-2020 16:03:44	Gathering indexes for table types
+29-01-2020 16:03:44	Gathering check constraints for table types
+29-01-2020 16:03:44	Gathering default constraints for table types
+29-01-2020 16:03:44	Gathering partition functions
+29-01-2020 16:03:44	Gathering partition schemes
+29-01-2020 16:03:44	Gathering functions
+29-01-2020 16:03:44	Gathering encrypted functions
+29-01-2020 16:03:44	Gathering aggregates
+29-01-2020 16:03:44	Gathering procedures
+29-01-2020 16:03:44	Gathering encrypted procedures
+29-01-2020 16:03:44	Gathering tables
+29-01-2020 16:03:44	Gathering primary keys
+29-01-2020 16:03:44	Gathering unique constraints
+29-01-2020 16:03:44	Gathering foreign keys
+29-01-2020 16:03:44	Gathering default constraints
+29-01-2020 16:03:44	Gathering check constraints
+29-01-2020 16:03:44	Gathering views
+29-01-2020 16:03:44	Gathering encrypted views
+29-01-2020 16:03:44	Gathering indexes
+29-01-2020 16:03:44	Gathering statistics
+29-01-2020 16:03:44	Gathering full-text index stoplists
+29-01-2020 16:03:44	Gathering search property lists
+29-01-2020 16:03:44	Gathering search properties
+29-01-2020 16:03:44	Gathering full-text indexes
+29-01-2020 16:03:44	Gathering column store indexes
+29-01-2020 16:03:44	Gathering spatial indexes
+29-01-2020 16:03:44	Gathering XML indexes
+29-01-2020 16:03:44	Gathering Selective XML indexes
+29-01-2020 16:03:44	Gathering encrypted triggers
+29-01-2020 16:03:44	Gathering triggers
+29-01-2020 16:03:44	Gathering encrypted and clr ddl triggers
+29-01-2020 16:03:44	Gathering ddl triggers
+29-01-2020 16:03:44	Gathering synonyms
+29-01-2020 16:03:44	Gathering defaults
+29-01-2020 16:03:44	Gathering data constraint uddt bindings
+29-01-2020 16:03:44	Gathering rules
+29-01-2020 16:03:44	Gathering data constraint uddt bindings
+29-01-2020 16:03:44	Gathering message types
+29-01-2020 16:03:44	Gathering queues
+29-01-2020 16:03:44	Gathering contracts
+29-01-2020 16:03:44	Gathering services
+29-01-2020 16:03:44	Gathering event notifications
+29-01-2020 16:03:44	Gathering remote service bindings
+29-01-2020 16:03:44	Gathering broker priorities
+29-01-2020 16:03:44	Gathering signatures
+29-01-2020 16:03:44	Gathering data compression options
+29-01-2020 16:03:44	Gathering sequence types
+29-01-2020 16:03:44	Gathering security policies
+29-01-2020 16:03:44	Gather column encryption keys
+29-01-2020 16:03:44	Gathering column master keys
+29-01-2020 16:03:44	Gathering external data sources
+29-01-2020 16:03:44	Gathering external file formats
+29-01-2020 16:03:44	Gathering external tables
+29-01-2020 16:03:44	Gathering extended properties
+29-01-2020 16:03:44	Gathering credentials
+29-01-2020 16:03:45	Gathering logins
+29-01-2020 16:03:45	Gathering server audits
+29-01-2020 16:03:45	Finished importing database.
+29-01-2020 16:03:45	A summary of the import was saved to the following location: E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\Import Schema Logs\CICDSQLDatabase_20200129103337.log
+29-01-2020 16:03:45	Click Finish to continue...

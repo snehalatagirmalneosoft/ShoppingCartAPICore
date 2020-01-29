@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.DAL", "Shoppin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.UnitTest", "ShoppingCart.UnitTestProject\ShoppingCart.UnitTest.csproj", "{CBB2B731-5FEC-4300-A67C-0859FD0BE395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.BAL", "ShoppingCart.BAL\ShoppingCart.BAL.csproj", "{F62F5D69-AD49-4E13-8D18-4B5BBE7421FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.BAL", "ShoppingCart.BAL\ShoppingCart.BAL.csproj", "{F62F5D69-AD49-4E13-8D18-4B5BBE7421FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.DTO", "ShoppingCart.DTO\ShoppingCart.DTO.csproj", "{130244DF-D89E-4300-B43A-B16D23DD51BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.DTO", "ShoppingCart.DTO\ShoppingCart.DTO.csproj", "{130244DF-D89E-4300-B43A-B16D23DD51BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.API", "ShoppingCart.API\ShoppingCart.API.csproj", "{C48AB738-9B10-4CA9-8123-582E650068BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart.API", "ShoppingCart.API\ShoppingCart.API.csproj", "{C48AB738-9B10-4CA9-8123-582E650068BA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CICDSQLDatabase", "CICDSQLDatabase\CICDSQLDatabase.sqlproj", "{25C200BF-2FF0-405D-B1FD-A34F1A0C45C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,12 @@ Global
 		{C48AB738-9B10-4CA9-8123-582E650068BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C48AB738-9B10-4CA9-8123-582E650068BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C48AB738-9B10-4CA9-8123-582E650068BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C200BF-2FF0-405D-B1FD-A34F1A0C45C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25C200BF-2FF0-405D-B1FD-A34F1A0C45C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25C200BF-2FF0-405D-B1FD-A34F1A0C45C7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{25C200BF-2FF0-405D-B1FD-A34F1A0C45C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25C200BF-2FF0-405D-B1FD-A34F1A0C45C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25C200BF-2FF0-405D-B1FD-A34F1A0C45C7}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

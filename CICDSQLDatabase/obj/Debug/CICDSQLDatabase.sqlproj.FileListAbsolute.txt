@@ -1,0 +1,10 @@
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\bin\Debug\CICDSQLDatabase.dacpac
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\bin\Debug\CICDSQLDatabase.dll
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\bin\Debug\CICDSQLDatabase.pdb
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\obj\Debug\CICDSQLDatabase.sqlprojAssemblyReference.cache
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\obj\Debug\Model.xml
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\obj\Debug\refactor.xml
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\obj\Debug\postdeploy.sql
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\obj\Debug\predeploy.sql
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\obj\Debug\CICDSQLDatabase.dll
+E:\GitProjectCoreAngular\ShoppingCartAPICore-master\ShoppingCartAPICore2.0\CICDSQLDatabase\obj\Debug\CICDSQLDatabase.pdb
